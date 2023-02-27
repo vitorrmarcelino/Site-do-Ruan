@@ -1,0 +1,93 @@
+ /*CSS CARDIO DO RUAN */
+
+  /* Patch Atualizaçao */
+  .patch{
+  margin-top: 500px;
+  }
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.game {
+  border-bottom: 1px solid;
+  height: 300px;
+  width: 800px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(161, 96, 134);
+}
+
+.score {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  font-size: x-large;
+}
+
+.bombado {
+  position: absolute;
+  bottom: 0;
+  background-image: url(img/ruanbombado-removebg-preview.png);
+  width: 180px;
+  height: 150px;
+  background-size: 180px;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+.cacto {
+  position: absolute;
+  bottom: 0;
+  background-image: url(img/cacto.png);
+  width: 35px;
+  height: 70px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  animation: cacto 2.5s linear infinite;
+}
+
+@keyframes cacto {
+  0% {
+    right: -20px;
+  }
+  100% {
+    right: 850px;
+  }
+}
+
+.jump {
+  animation: jump 0.6s linear;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  30% {
+    bottom: 80px;
+  }
+
+  50% {
+    bottom: 100px;
+  }
+
+  80% {
+    bottom: 80px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
